@@ -1,2 +1,4 @@
+res://game.tscn
 res://theme/theme.tres
 res://decoration/wind_sway.tres
+res://dialogue/dialogue_data/npc.json
