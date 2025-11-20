@@ -977,3 +977,7 @@ text = "print(“Hello World);"
 [connection signal="button_up" from="CombatCanvas/UI/Buttons/GridContainer/Attack" to="CombatCanvas/UI" method="_on_Attack_button_up"]
 [connection signal="button_up" from="CombatCanvas/UI/Buttons/GridContainer/Defend" to="CombatCanvas/UI" method="_on_Defend_button_up"]
 [connection signal="button_up" from="CombatCanvas/UI/Buttons/GridContainer/Flee" to="CombatCanvas/UI" method="_on_Flee_button_up"]
+[connection signal="button_up" from="CombatCanvas/UI/PopupPanel/GridContainer/Answer1" to="CombatCanvas/UI" method="_on_Answer1_button_up"]
+[connection signal="button_up" from="CombatCanvas/UI/PopupPanel/GridContainer/Answer2" to="CombatCanvas/UI" method="_on_Answer2_button_up"]
+[connection signal="button_up" from="CombatCanvas/UI/PopupPanel/GridContainer/Answer3" to="CombatCanvas/UI" method="_on_Answer3_button_up"]
+[connection signal="button_up" from="CombatCanvas/UI/PopupPanel/GridContainer/Answer4" to="CombatCanvas/UI" method="_on_Answer4_button_up"]

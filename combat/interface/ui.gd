@@ -67,6 +67,7 @@ func _on_Flee_button_up() -> void:
 
 # Force Character to flee if answer is wrong
 func _on_Answer1_button_up() -> void: 
+	print("button click")
 	popup.hide()
 	disableButtons()
 
