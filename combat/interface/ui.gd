@@ -6,7 +6,7 @@ signal flee(winner: Combatant, loser: Combatant)
 @export var combatants_node: Node
 @export var info_scene: PackedScene
 @onready var popup = $PopupPanel
-@onready var gridContainer = $Buttons/GridContainer
+@onready var gridContainer = $PopupPanel/GridContainer
 
 func initialize() -> void:
 	# Set Popup
@@ -19,12 +19,14 @@ func initialize() -> void:
 	var text = file.get_as_text()
 	var data = JSON.parse_string(text)
 	
-	var count = 0
-	# Enable All Buttons
+	# Enable all buttons
+	var answer_index = 0
 	for button in gridContainer.get_children():
+		if button is Label:
+			continue
 		button.disabled = false
-		#button.text = data["opponent1"]["answers"][count]
-		count += 1
+		button.text = data["opponent1"]["answers"][answer_index]
+		answer_index += 1
 		
 	for combatant in combatants_node.get_children():
 		var health := combatant.get_node(^"Health")
