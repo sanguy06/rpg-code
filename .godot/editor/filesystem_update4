@@ -1,4 +1,10 @@
-res://game.tscn
+res://combat/combat2.gd
+res://combat/combat2.tscn
 res://theme/theme.tres
 res://decoration/wind_sway.tres
-res://dialogue/dialogue_data/npc.json
+res://combat/questions/question_set1.json
+res://combat/popup_panel.gd
+res://combat/interface/ui.gd
+res://game.gd
+res://combat/combat.tscn
+res://combat/combat.gd

@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://cdekxv3bqe133" path="res://grid_movement/pawns/walker.gd" id="1"]
 [ext_resource type="Texture2D" uid="uid://ykc1vyv1502w" path="res://grid_movement/pawns/character.png" id="2"]
-[ext_resource type="SpriteFrames" uid="uid://gucxux3cqds3" path="res://grid_movement/pawns/anim_player.tres" id="4_1c7h6"]
+[ext_resource type="SpriteFrames" uid="uid://ris4f8p1qn68" path="res://grid_movement/pawns/anim_player.tres" id="4_1c7h6"]
 
 [sub_resource type="Animation" id="3"]
 length = 0.001
@@ -197,8 +197,8 @@ libraries = {
 [node name="Pivot" type="Marker2D" parent="."]
 
 [node name="Slime" type="AnimatedSprite2D" parent="Pivot"]
-position = Vector2(0, 4.4436316)
-scale = Vector2(1.1110908, 0.8613587)
+position = Vector2(0, -1.9712868)
+scale = Vector2(0.9642597, 1.0619904)
 sprite_frames = ExtResource("4_1c7h6")
 animation = &"idle"
 centered = false

@@ -1,7 +1,7 @@
 [gd_scene load_steps=29 format=4 uid="uid://dtaj2nc2g4cb8"]
 
-[ext_resource type="TileSet" path="res://grid_movement/grid/lines/grid_lines_tileset.tres" id="1"]
-[ext_resource type="TileSet" path="res://grid_movement/grid/tiles/grid_tileset.tres" id="2"]
+[ext_resource type="TileSet" uid="uid://dch57gpmd740m" path="res://grid_movement/grid/lines/grid_lines_tileset.tres" id="1"]
+[ext_resource type="TileSet" uid="uid://vgnp5ewkisf" path="res://grid_movement/grid/tiles/grid_tileset.tres" id="2"]
 [ext_resource type="Script" uid="uid://bs5sje5mewg4r" path="res://grid_movement/grid/grid.gd" id="3"]
 [ext_resource type="PackedScene" uid="uid://hsyh6evu04ui" path="res://grid_movement/pawns/character.tscn" id="4"]
 [ext_resource type="PackedScene" uid="uid://dm4yvwbtjjjmm" path="res://combat/combatants/player.tscn" id="5"]
@@ -10,17 +10,17 @@
 [ext_resource type="PackedScene" uid="uid://y66h87msahf2" path="res://dialogue/dialogue_player/dialogue_player.tscn" id="8"]
 [ext_resource type="Script" uid="uid://cx8oui15s7e7q" path="res://grid_movement/pawns/pawn.gd" id="9"]
 [ext_resource type="PackedScene" uid="uid://b68obf2cqxmfg" path="res://dialogue/interface/interface.tscn" id="10"]
-[ext_resource type="TileSet" path="res://grid_movement/grid/tiles/ground_tileset.tres" id="11"]
+[ext_resource type="TileSet" uid="uid://vrdo8i8y4qwm" path="res://grid_movement/grid/tiles/ground_tileset.tres" id="11"]
 [ext_resource type="Texture2D" uid="uid://do71hfdbu65kx" path="res://decoration/grass.png" id="12"]
 [ext_resource type="Material" uid="uid://5na16rpclxk2" path="res://decoration/wind_sway.tres" id="13"]
 [ext_resource type="Texture2D" uid="uid://mxtiys5fsw3v" path="res://grid_movement/pawns/opponent_exploration.png" id="14"]
 [ext_resource type="Script" uid="uid://daf37xqkewe7p" path="res://grid_movement/pawns/player.gd" id="14_dg62l"]
 [ext_resource type="Texture2D" uid="uid://baxel68m2il5e" path="res://decoration/grass_variant.png" id="15"]
-[ext_resource type="SpriteFrames" path="res://grid_movement/pawns/anim_player.tres" id="15_qps0g"]
-[ext_resource type="TileSet" path="res://grid_movement/grid/tiles/pathways.tres" id="16"]
+[ext_resource type="SpriteFrames" uid="uid://ris4f8p1qn68" path="res://grid_movement/pawns/anim_player.tres" id="15_qps0g"]
+[ext_resource type="TileSet" uid="uid://grcyydwf71pd" path="res://grid_movement/grid/tiles/pathways.tres" id="16"]
 [ext_resource type="Texture2D" uid="uid://2ceuxn4ebsws" path="res://decoration/pebble.png" id="17"]
 [ext_resource type="Texture2D" uid="uid://b8ex5xc0u34lv" path="res://decoration/grass_upperlevel.png" id="18"]
-[ext_resource type="SpriteFrames" path="res://grid_movement/pawns/anim_opponent.tres" id="18_dg62l"]
+[ext_resource type="SpriteFrames" uid="uid://bbpjher8peaki" path="res://grid_movement/pawns/anim_opponent.tres" id="18_dg62l"]
 [ext_resource type="Texture2D" uid="uid://c1t05jpbpu5xm" path="res://decoration/grass_variant_upperlevel.png" id="19"]
 [ext_resource type="Texture2D" uid="uid://coirrxokxktp3" path="res://decoration/pebble_variant.png" id="20"]
 [ext_resource type="Texture2D" uid="uid://dpkglykksi6ci" path="res://decoration/flower.png" id="21"]
@@ -644,20 +644,20 @@ script = ExtResource("14_dg62l")
 combat_actor = ExtResource("5")
 pose_anims = ExtResource("15_qps0g")
 
-[node name="Opponent" parent="Grid" instance=ExtResource("4")]
-position = Vector2(800, 480)
+[node name="Opponent1" parent="Grid" instance=ExtResource("4")]
+position = Vector2(726, 288)
 script = ExtResource("6")
 combat_actor = ExtResource("7")
 pose_anims = ExtResource("18_dg62l")
 
-[node name="DialoguePlayer" parent="Grid/Opponent" instance=ExtResource("8")]
+[node name="DialoguePlayer" parent="Grid/Opponent1" instance=ExtResource("8")]
 dialogue_file = "res://dialogue/dialogue_data/npc.json"
 
-[node name="Timer" type="Timer" parent="Grid/Opponent"]
+[node name="Timer" type="Timer" parent="Grid/Opponent1"]
 one_shot = true
 autostart = true
 
-[node name="Sprite2D" type="Sprite2D" parent="Grid/Opponent"]
+[node name="Sprite2D" type="Sprite2D" parent="Grid/Opponent1"]
 visible = false
 texture = ExtResource("14")
 
@@ -668,6 +668,40 @@ type = 2
 
 [node name="DialoguePlayer" parent="Grid/Object" instance=ExtResource("8")]
 dialogue_file = "res://dialogue/dialogue_data/object.json"
+
+[node name="Opponent2" parent="Grid" instance=ExtResource("4")]
+position = Vector2(666, 289)
+script = ExtResource("6")
+combat_actor = ExtResource("7")
+pose_anims = ExtResource("18_dg62l")
+
+[node name="DialoguePlayer" parent="Grid/Opponent2" instance=ExtResource("8")]
+dialogue_file = "res://dialogue/dialogue_data/npc.json"
+
+[node name="Timer" type="Timer" parent="Grid/Opponent2"]
+one_shot = true
+autostart = true
+
+[node name="Sprite2D" type="Sprite2D" parent="Grid/Opponent2"]
+visible = false
+texture = ExtResource("14")
+
+[node name="Opponent3" parent="Grid" instance=ExtResource("4")]
+position = Vector2(604, 288)
+script = ExtResource("6")
+combat_actor = ExtResource("7")
+pose_anims = ExtResource("18_dg62l")
+
+[node name="DialoguePlayer" parent="Grid/Opponent3" instance=ExtResource("8")]
+dialogue_file = "res://dialogue/dialogue_data/npc.json"
+
+[node name="Timer" type="Timer" parent="Grid/Opponent3"]
+one_shot = true
+autostart = true
+
+[node name="Sprite2D" type="Sprite2D" parent="Grid/Opponent3"]
+visible = false
+texture = ExtResource("14")
 
 [node name="Decoration upper level" type="Node2D" parent="."]
 

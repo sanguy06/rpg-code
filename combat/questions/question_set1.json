@@ -1,0 +1,12 @@
+{
+	"opponent1": {
+		"question" : "How do you print Hello World in Java?", 
+		"answers" : [
+					"print(\"Hello World\")", 
+					"System.out.println(\"Hello World\");", 
+					"System.out.println(\"Hello World\")",
+					"print(\"Hello World\");"
+					], 
+		"correct_answer" : 2
+	}
+}

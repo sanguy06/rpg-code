@@ -37,7 +37,12 @@ func request_move(pawn: Pawn, direction: Vector2i) -> Vector2i:
 
 		CellType.OBJECT, CellType.ACTOR:
 			var target_pawn := get_cell_pawn(cell_target, cell_tile_id)
-			#print("Cell %s contains %s" % [cell_target, target_pawn.name])
+			
+			# After clearing a node, target_pawn may be null
+			# This occurs when we delete an opponent from the scene
+			if target_pawn == null:
+				set_cell(cell_target, -1)
+				return request_move(pawn, direction)
 
 			if not target_pawn.has_node(^"DialoguePlayer"):
 				return Vector2i.ZERO
