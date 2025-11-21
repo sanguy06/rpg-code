@@ -39,7 +39,8 @@ func _on_opponent_dialogue_finished(opponent: Pawn) -> void:
 		return
 	var player: Node2D = $Exploration/Grid/Player
 	var combatants: Array[PackedScene] = [player.combat_actor, opponent.combat_actor]
-	start_combat(combatants, opponent)
+	if opponent.name != "Opponent4":
+		start_combat(combatants, opponent)
 
 
 func _on_combat_finished(winner: Combatant, loser: Combatant) -> void:

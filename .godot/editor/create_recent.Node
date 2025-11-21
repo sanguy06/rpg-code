@@ -1,5 +1,6 @@
-VBoxContainer
+Sprite2D
 Node2D
+VBoxContainer
 Button
 Label
 GridContainer
