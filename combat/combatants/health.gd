@@ -6,8 +6,9 @@ signal health_changed(life: float)
 @export var life := 0
 @export var max_life := 10
 @export var base_armor := 0
-
+@onready var ui = get_node("/root/Combat/CombatCanvas/UI")
 var armor := 0
+
 
 func _ready() -> void:
 	armor = base_armor
@@ -19,6 +20,9 @@ func take_damage(damage: int) -> void:
 		dead.emit()
 	else:
 		health_changed.emit(life)
+	#ui = get_node("combat/interface/ui.gd")
+	#ui = get_node("/root/Combat/CombatCanvas/UI")
+	ui.initialize()
 
 
 func heal(amount: int) -> void:

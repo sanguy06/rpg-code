@@ -1,0 +1,9 @@
+res://grid_movement/exploration.tscn
+res://theme/theme.tres
+res://decoration/wind_sway.tres
+res://combat/interface/ui.gd
+res://combat/questions/question_set1.json
+res://combat/combat.tscn
+res://combat/combat.gd
+res://combat/combatants/opponent.tscn
+res://combat/combatants/health.gd

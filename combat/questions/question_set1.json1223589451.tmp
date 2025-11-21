@@ -1,4 +1,4 @@
-[
+{
 	{
 		"question_num": 1,
 		"question" : "How do you print Hello World in Java?", 
@@ -12,35 +12,24 @@
 	}, 
 	{
 		"question_num": 2, 
-		"question" : "How do you print Hello World in C?", 
+		"question" : "How do you print Hello WOrld in C?", 
 		"answers" : [
 			"print(\"Hello World\")", 
 			"System.out.println(\"Hello World\");", 
-			"printf(\"Hello World\");",
+			"printf(\"Hello World\")",
 			"std::cout << \"Hello World\" << std::endl;"
 		], 
 		"correct_answer" : 3
 	}, 
 	{
 		"question_num": 3, 
-		"question" : "How do you print Hello World in C++?", 
+		"question" : "How do you print Hello WOrld in C++?", 
 		"answers" : [
 			"print(\"Hello World\")", 
 			"System.out.println(\"Hello World\");", 
-			"printf(\"Hello World\");",
-			"cout << \"Hello World\";"
+			"printf(\"Hello World\")",
+			"std::cout << \"Hello World\" << std::endl;"
 		], 
 		"correct_answer" : 4
-	}, 
-	{
-		"question_num": 4, 
-		"question" : "How do you print Hello World in Python?", 
-		"answers" : [
-			"print(\"Hello World\")", 
-			"System.out.println(\"Hello World\");", 
-			"printf(\"Hello World\");",
-			"cout << \"Hello World\";"
-		], 
-		"correct_answer" : 1
-	}, 
-]
+	}
+}
