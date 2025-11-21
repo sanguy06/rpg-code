@@ -5,6 +5,7 @@ signal combat_finished(winner: Combatant, loser: Combatant)
 
 @onready var ui := $CombatCanvas/UI
 @onready var popup = $CombatCanvas/UI/PopupPanel
+@onready var gridContainer = $CombatCanvas/UI/PopupPanel/GridContainer
 
 func _ready() -> void:
 	ui.flee.connect(_on_flee)

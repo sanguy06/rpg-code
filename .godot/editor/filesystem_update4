@@ -7,5 +7,10 @@ res://combat/combat.tscn
 res://theme/theme.tres
 res://decoration/wind_sway.tres
 res://grid_movement/exploration.tscn
+res://combat/questions/question_set1.json
+res://combat/combatants/opponent.tscn
+res://combat/combatants/health.gd
+res://combat/combatants/combatant.tscn
 res://dialogue/dialogue_data/teacher.json
 res://dialogue/dialogue_data/ccpp.json
+
