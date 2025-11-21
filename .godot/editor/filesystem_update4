@@ -7,3 +7,4 @@ res://combat/combat.tscn
 res://combat/combat.gd
 res://combat/combatants/opponent.tscn
 res://combat/combatants/health.gd
+res://combat/combatants/combatant.tscn

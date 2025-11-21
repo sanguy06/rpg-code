@@ -2,17 +2,17 @@ extends Node
 
 signal dead
 signal health_changed(life: float)
+signal damage_taken
 
 @export var life := 0
 @export var max_life := 10
 @export var base_armor := 0
 @onready var ui = get_node("/root/Combat/CombatCanvas/UI")
-var armor := 0
 
+var armor := 0
 
 func _ready() -> void:
 	armor = base_armor
-
 
 func take_damage(damage: int) -> void:
 	life = life - damage + armor
@@ -20,16 +20,12 @@ func take_damage(damage: int) -> void:
 		dead.emit()
 	else:
 		health_changed.emit(life)
-	#ui = get_node("combat/interface/ui.gd")
-	#ui = get_node("/root/Combat/CombatCanvas/UI")
-	ui.initialize()
-
+	damage_taken.emit()
 
 func heal(amount: int) -> void:
 	life += amount
 	life = clamp(life, life, max_life)
 	health_changed.emit(life)
-
 
 func get_health_ratio() -> float:
 	return float(life) / max_life
