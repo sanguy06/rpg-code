@@ -20,6 +20,9 @@ func take_damage(damage: int) -> void:
 		dead.emit()
 	else:
 		health_changed.emit(life)
+	
+	if get_tree(): 
+		await get_tree().create_timer(0.5).timeout
 	damage_taken.emit()
 
 func heal(amount: int) -> void:

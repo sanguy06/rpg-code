@@ -197,8 +197,8 @@ libraries = {
 [node name="Pivot" type="Marker2D" parent="."]
 
 [node name="Slime" type="AnimatedSprite2D" parent="Pivot"]
-position = Vector2(0, -1.9712868)
-scale = Vector2(0.9642597, 1.0619904)
+position = Vector2(0, -0.21825743)
+scale = Vector2(0.9954388, 1.0068418)
 sprite_frames = ExtResource("4_1c7h6")
 animation = &"idle"
 centered = false

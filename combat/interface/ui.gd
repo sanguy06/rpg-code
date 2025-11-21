@@ -23,7 +23,6 @@ func initialize() -> void:
 		$Combatants.add_child(info)
 	
 	show_question_popup()
-	
 	$Buttons/GridContainer/Attack.grab_focus()
 	
 
