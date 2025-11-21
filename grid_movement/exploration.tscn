@@ -711,7 +711,7 @@ combat_actor = ExtResource("7")
 pose_anims = ExtResource("18_dg62l")
 
 [node name="DialoguePlayer" parent="Grid/Opponent4" instance=ExtResource("8")]
-dialogue_file = "res://dialogue/dialogue_data/npc.json"
+dialogue_file = "res://dialogue/dialogue_data/teacher.json"
 
 [node name="Timer" type="Timer" parent="Grid/Opponent4"]
 one_shot = true

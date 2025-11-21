@@ -1,0 +1,10 @@
+res://game.gd
+res://combat/combat.gd
+res://combat/interface/ui.gd
+res://grid_movement/grid/grid.gd
+res://grid_movement/pawns/character.tscn
+res://combat/combat.tscn
+res://theme/theme.tres
+res://decoration/wind_sway.tres
+res://grid_movement/exploration.tscn
+res://dialogue/dialogue_data/teacher.json
