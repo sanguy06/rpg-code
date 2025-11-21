@@ -8,3 +8,4 @@ res://theme/theme.tres
 res://decoration/wind_sway.tres
 res://grid_movement/exploration.tscn
 res://dialogue/dialogue_data/teacher.json
+res://dialogue/dialogue_data/ccpp.json

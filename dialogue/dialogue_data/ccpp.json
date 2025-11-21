@@ -1,0 +1,23 @@
+{
+	"dialog_1" : { "name": "UNKNOWN", "text": "A true code mage must master every dialect!" },
+	"dialog_2" : { "name": "TEACHER", "text": "You've met Java's magic" },
+	"dialog_3" : { "name": "TEACHER", "text": "Now I'll show you the ancient texts: C" },
+	"dialog_4" : { "name": "TEACHER", "text": "and its descendant, C++" },
+	"dialog_5" : { "name": "TEACHER", "text": "In the world of C, to make the console sing," },
+	"dialog_6" : { "name": "TEACHER", "text": "we invoke an old spell: 'printf'"},
+	"dialog_7" : { "name": "TEACHER", "text": "Let's use it in practice:" },
+	"dialog_8" : { "name": "TEACHER", "text": "printf(\"Welcome, traveler!\");" },
+	"dialog_9" : { "name": "TEACHER", "text": "For your first spell, I will teach you" },
+	"dialog_10" : { "name": "TEACHER", "text": "how to make the machine greet the world" },
+	"dialog_11" : { "name": "TEACHER", "text": "You would say:" },
+	"dialog_12" : { "name": "TEACHER", "text": "System.out.println(\"Hello World\");" },
+	"dialog_13" : { "name": "TEACHER", "text": "Don't forget your semicolons!" },
+	"dialog_14" : { "name": "TEACHER", "text": "Onwards to C++! Here the spell for speech is 'cout'" },
+	"dialog_15" : { "name": "TEACHER", "text": "Observe:" },
+	"dialog_16" : { "name": "TEACHER", "text": "cout << \"Behold! C++ speaks! \";" },
+	"dialog_17" : { "name": "TEACHER", "text": "'cout' flows with double arrows << pushing your message" },
+	"dialog_18" : { "name": "TEACHER", "text": "into the world. Remember to not miss a semicolon!" },
+	"dialog_19" : { "name": "TEACHER", "text": "else the goblins of syntax error may appear!"},
+	"dialog_20" : { "name": "TEACHER", "text": "Speak with code and the system shall answer"},
+	"dialog_21" : { "name": "TEACHER", "text": "The might of C and C++ awaits!"}
+}
