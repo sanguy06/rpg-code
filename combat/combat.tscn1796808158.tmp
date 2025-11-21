@@ -15,7 +15,7 @@
 [ext_resource type="Texture2D" uid="uid://dqdbxcdnkjxxt" path="res://combat/background/combat_shadow.png" id="13"]
 [ext_resource type="Texture2D" uid="uid://dpkglykksi6ci" path="res://decoration/flower.png" id="14"]
 [ext_resource type="Texture2D" uid="uid://2al2y10t8agi" path="res://decoration/flower_variant.png" id="15"]
-[ext_resource type="Script" path="res://combat/popup_panel.gd" id="16_juqtb"]
+[ext_resource type="Script" uid="uid://cj0fpkjdihj4m" path="res://combat/popup_panel.gd" id="16_juqtb"]
 
 [sub_resource type="GDScript" id="1"]
 script/source = "extends Node2D
@@ -968,7 +968,6 @@ layout_mode = 2
 
 [node name="Answer4" type="Button" parent="CombatCanvas/UI/PopupPanel/GridContainer"]
 layout_mode = 2
-text = "print(“Hello World);"
 
 [connection signal="button_up" from="CombatCanvas/UI/Buttons/GridContainer/Attack" to="CombatCanvas/UI" method="_on_Attack_button_up"]
 [connection signal="button_up" from="CombatCanvas/UI/Buttons/GridContainer/Defend" to="CombatCanvas/UI" method="_on_Defend_button_up"]

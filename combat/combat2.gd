@@ -5,14 +5,15 @@ signal combat_finished(winner: Combatant, loser: Combatant)
 
 @onready var ui := $CombatCanvas/UI
 @onready var popup = $CombatCanvas/UI/PopupPanel
-
+'''
 func _ready() -> void:
 	ui.flee.connect(_on_flee)
-
+'''
 
 func _on_flee(winner: Combatant, loser: Combatant) -> void:
 	finish_combat(winner, loser)
 
+# Make popup appear
 func initialize(combat_combatants: Array[PackedScene]) -> void:
 	for combatant_scene in combat_combatants:
 		var combatant := combatant_scene.instantiate()

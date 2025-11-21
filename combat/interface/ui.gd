@@ -5,9 +5,29 @@ signal flee(winner: Combatant, loser: Combatant)
 
 @export var combatants_node: Node
 @export var info_scene: PackedScene
-
+@onready var popup = $PopupPanel
+@onready var gridContainer = $PopupPanel/GridContainer
 
 func initialize() -> void:
+	# Set Popup
+	popup.popup_centered()
+	popup.show()
+	
+	# Get JSON File
+	var file = FileAccess.open("res://combat/questions/question_set1.json", 
+		FileAccess.READ)
+	var text = file.get_as_text()
+	var data = JSON.parse_string(text)
+	
+	# Enable all buttons
+	var answer_index = 0
+	for button in gridContainer.get_children():
+		if button is Label:
+			continue
+		button.disabled = false
+		button.text = data["opponent1"]["answers"][answer_index]
+		answer_index += 1
+		
 	for combatant in combatants_node.get_children():
 		var health := combatant.get_node(^"Health")
 		var info := info_scene.instantiate()
@@ -44,3 +64,28 @@ func _on_Flee_button_up() -> void:
 	var loser: Combatant = combatants_node.get_node(^"Player")
 	var winner: Combatant = combatants_node.get_node(^"Opponent")
 	flee.emit(winner, loser)
+
+# These buttons used Connection native to IDE
+
+# Force Character to flee if answer is wrong
+func _on_Answer1_button_up() -> void: 
+	print("button click")
+	popup.hide()
+	disableButtons()
+
+# Answer is correct, so allow them to choose
+func _on_Answer2_button_up() -> void: 
+	popup.hide()
+
+func _on_Answer3_button_up() -> void: 
+	popup.hide()
+	disableButtons()
+
+func _on_Answer4_button_up() -> void: 
+	popup.hide()
+	disableButtons()
+
+# Allow User to only choose Flee
+func disableButtons() -> void: 
+	$Buttons/GridContainer/Attack.disabled = true
+	$Buttons/GridContainer/Defend.disabled = true
