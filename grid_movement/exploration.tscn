@@ -32,7 +32,6 @@
 [ext_resource type="Texture2D" uid="uid://jjitxml2ve26" path="res://decoration/bush.png" id="25"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_oqsvr"]
-load_path = "res://.godot/imported/magic_wand.png-43a39f17e3c452972133d5dbb98d2480.ctex"
 
 [node name="Exploration" type="Node2D"]
 

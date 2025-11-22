@@ -10,3 +10,7 @@ res://grid_movement/pawns/anim_player.tres
 res://grid_movement/pawns/character.tscn
 res://theme/theme.tres
 res://decoration/wind_sway.tres
+res://grid_movement/exploration.tscn
+res://dialogue/dialogue_data/npc.json
+res://dialogue/dialogue_data/player_lose.json
+res://dialogue/dialogue_data/player_won.json
