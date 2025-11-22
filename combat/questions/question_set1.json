@@ -49,7 +49,7 @@
 		"answers": [
 			"scanf(\"%s\", str);",
 			"String str = input();",
-			"Scanner scanner = new Scanner(System.in); String str = scanner.nextLine();",
+			"String str = scanner.nextLine();",
 			"getline(cin, str);"
 		],
 		"correct_answer": 3
@@ -70,7 +70,7 @@
 		"question": "How do you read a string from user input in C++?",
 		"answers": [
 			"getline(cin, str);",
-			"Scanner scanner = new Scanner(System.in); String str = scanner.nextLine();",
+			"String str = scanner.nextLine();",
 			"scanf(\"%s\", str);",
 			"input_string = input()"
 		],
@@ -83,7 +83,7 @@
 			"scanf(\"%s\", str);",
 			"cin >> str;",
 			"input_string = input()",
-			"Scanner scanner = new Scanner(System.in); String str = scanner.nextLine();"
+			"String str = scanner.nextLine();"
 		],
 		"correct_answer": 3
 	},
