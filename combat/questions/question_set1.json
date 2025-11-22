@@ -42,5 +42,93 @@
 			"cout << \"Hello World\";"
 		], 
 		"correct_answer" : 1
-	}, 
+	},
+	{
+		"question_num": 5,
+		"question": "How do you read a string from user input in Java?",
+		"answers": [
+			"scanf(\"%s\", str);",
+			"String str = input();",
+			"Scanner scanner = new Scanner(System.in); String str = scanner.nextLine();",
+			"getline(cin, str);"
+		],
+		"correct_answer": 3
+	},
+	{
+		"question_num": 6,
+		"question": "How do you read a string from user input in C?",
+		"answers": [
+			"String str = input();",
+			"scanf(\"%s\", str);",
+			"cin >> str;",
+			"input_string = input()"
+		],
+		"correct_answer": 2
+	},
+	{
+		"question_num": 7,
+		"question": "How do you read a string from user input in C++?",
+		"answers": [
+			"getline(cin, str);",
+			"Scanner scanner = new Scanner(System.in); String str = scanner.nextLine();",
+			"scanf(\"%s\", str);",
+			"input_string = input()"
+		],
+		"correct_answer": 1
+	},
+	{
+		"question_num": 8,
+		"question": "How do you read a string from user input in Python?",
+		"answers": [
+			"scanf(\"%s\", str);",
+			"cin >> str;",
+			"input_string = input()",
+			"Scanner scanner = new Scanner(System.in); String str = scanner.nextLine();"
+		],
+		"correct_answer": 3
+	},
+	{
+		"question_num": 9,
+		"question": "How do you declare an integer variable with value 42 in Java?",
+		"answers": [
+			"int num = 42;",
+			"num = 42",
+			"integer num = 42;",
+			"int num := 42;"
+		],
+		"correct_answer": 1
+	},
+	{
+		"question_num": 10,
+		"question": "How do you declare an integer variable with value 42 in C?",
+		"answers": [
+			"num = 42;",
+			"int num = 42;",
+			"integer num = 42;",
+			"int num := 42;"
+		],
+		"correct_answer": 2
+	},
+	{
+		"question_num": 11,
+		"question": "How do you declare an integer variable with value 42 in C++?",
+		"answers": [
+			"num = 42;",
+			"int num = 42;",
+			"integer num = 42;",
+			"int num := 42;"
+		],
+		"correct_answer": 2
+	},
+	{
+		"question_num": 12,
+		"question": "How do you declare an integer variable with value 42 in Python?",
+		"answers": [
+			"int num = 42;",
+			"num = 42",
+			"integer num = 42;",
+			"int num := 42;"
+		],
+		"correct_answer": 2
+	}
 ]

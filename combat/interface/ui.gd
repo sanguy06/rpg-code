@@ -38,7 +38,7 @@ func show_question_popup() -> void:
 	
 	# Generate Random Number for Random question
 	randomize()
-	var n = randi_range(0, 3) 
+	var n = randi_range(0, 11) 
 	
 	# Get JSON File
 	var file = FileAccess.open("res://combat/questions/question_set1.json", 

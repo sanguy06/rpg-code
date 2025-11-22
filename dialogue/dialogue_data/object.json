@@ -1,3 +1,16 @@
 {
-	"dialog_1" : { "name": "PLAYER", "text": "Just a key..." }
+	"dialog_1" : { "name": "PLAYER", "text": "What is this?" },
+	"dialog_2" : { "name": "CODEX", "text": "At last... I compile once more" },
+	"dialog_3" : { "name": "CODEX", "text": "For centuries, I have slumbered" },
+	"dialog_4" : { "name": "CODEX", "text": "in fragments. Unlinked, unexecuted" },
+	"dialog_5" : { "name": "CODEX", "text": "Waiting for one who could" },
+	"dialog_6" : { "name": "CODEX", "text": "parse my ancient syntax" },
+	"dialog_7" : { "name": "CODEX", "text": "You have proven yourself" },
+	"dialog_8" : { "name": "CODEX", "text": "Through trials of logic and" },
+	"dialog_9" : { "name": "CODEX", "text": "battles of syntax, you have" },
+	"dialog_10": { "name": "CODEX", "text": "debugged the path to my awakening" },
+	"dialog_11": { "name": "CODEX", "text": "I am the Codex of Compiled Secrets" },
+	"dialog_12": { "name": "CODEX", "text": "forged in the First Recursion" },
+	"dialog_13": { "name": "CODEX", "text": "You have unlocked me and now we" },
+	"dialog_14": { "name": "CODEX", "text": "shall write reality itself, together!" }
 }
